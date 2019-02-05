@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+/**
+ * General
+ */
+
+* {
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+
+html, body {
+    height: 100%;
+
+	margin: 0;
+
+	color: rgb(40, 40, 40);
+    font-family: 'Roboto', sans-serif;
+}
+
+.page {
+    position: relative;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    border-top: 1px solid rgb(240, 240, 240);
+}
+
+.page_first {
+    background: url('/images/background.jpg');
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+
+    margin: auto;
+}
+
+.header {
+    position: relative;
+    z-index: 5;
+
+    padding: 32px 80px;
+}
+
+/* .header-logo {
+    font-size: 24px;
+    color: #377dff;
+    font-weight: 500;
+} */
+
+.header-logo {
+    width: 200px;
+}
+
+.header-link {
+    float: right;
+    display: inline-block;
+    position: relative;
+    top: -8px;
+
+    padding: 16px 20px;
+
+    color: #377dff;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+
+    background: #E9F1FE;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.header-link:hover {
+    color: #fff;
+    background-color: #377dff;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 80px;
+}
+
+.screenshot {
+    width: 22%;
+    min-width: 360px;
+
+    align-self: flex-end;
+}
+
+.link {
+    color: #14699C;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+.image {
+    width: 100%;
+}
+
+.info {
+    /*width: 50%;*/
+}
+
+.catchphrase {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.5;
+    /* font-family: 'Questrial'; */
+}
+
+.emphasize {
+    display: block;
+
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.description {
+    max-width: 700px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    font-size: 22px;
+    line-height: 2;
+    color: rgb(60, 60, 60);
+}
+
+.email {
+    min-width: 400px;
+
+    margin-top: 40px;
+    margin-right: 20px;
+    padding: 22px 24px;
+
+    font-size: 18px;
+    font-family: 'Roboto';
+
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 4px;
+}
+
+.form-title {
+    margin-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 1.75;
+    color: rgb(80, 80, 80)
+}
+
+.button {
+    display: inline-block;
+
+    margin: 22px 20px 0 0;
+    padding: 26px 50px;
+
+    color: #14699C;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+
+    background: rgba(27, 165, 244, 0.18);
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #14699C;
+}
+
+.button_red {
+    background: #14699C;
+    color: #E9F1FE;
+}
+.button_red:hover {
+    /*background: #ff8282;*/
+    transform: scale(1.05);
+}
+
+.fadeOut {
+    transition-delay: 1s;
+    display: none;
+}
+.fadeIn {
+    transition-delay: 1s;
+    display: block;
+}
+
+
+.success {
+    display: none;
+
+    margin-top: 40px;
+    padding: 34px 48px;
+
+    color: #fff;
+
+    background: rgb(159, 221, 157);
+}
+
+
+
+
+.signup {
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 150px 20px;
+
+    text-align: center;
+    font-size: 22px;
+
+    /*background: rgb(240, 240, 240);*/
+}
+
+.button_signup {
+    /*display: block;*/
+}
+
+
+.about {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    height: 100%;
+
+    padding: 80px 0;
+
+    /* background: rgb(240, 240, 240); */
+}
+
+.about-column {
+    width: 33%;
+
+    margin: 0 30px;
+
+    text-align: center;
+}
+
+.about-screenshot {
+    width: 45%;
+}
+
+.about-text {
+    width: 75%;
+
+    margin: 60px auto 60px auto;
+
+    line-height: 1.75;
+    font-size: 18px;
+    color: rgb(100, 100, 100);
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .content {
+        position: relative;
+        display: block;
+
+        padding: 0 20px;
+    }
+
+    .header {
+        padding: 32px 20px;
+    }
+
+    .page {
+        height: auto;
+    }
+
+    .page_first {
+        padding-bottom: 60px;
+    }
+
+    .info {
+        width: 100%;
+
+        margin-top: 50px;
+    }
+    .screenshot {
+        /*margin: 50px auto;*/
+        display: none;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+    .about-column {
+        width: 100%;
+    }
+    .about-screenshot {
+        width: 175px;
+    }
+
+    .email {
+        width: 90%;
+        min-width: 0;
+
+        margin-right: 0;
+    }
+}
